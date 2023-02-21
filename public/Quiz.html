@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./fav.png" type="image/x-icon">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    
+  
+</head>
+<body class="bg-image" onload="displayData()">
+ 
+<div class=" container d-flex justify-content-center align-items-center vh-100 container-fluid ">
+  <div id="mainDiv" class="p-5 pt-5  bg-light rounded shadow w-50 d-flex flex-column container container-fluid">
+    <h2 id="Question" class="align-self-center font-size: 4vw">Question</h2>
+   <ul class="p-4 list-group">
+    <li class="list-group-item">
+        <input type="radio" name="Answer" id="a">
+        <label for=""  id="a_text">Opt1</label>
+    </li>
+    <li class="list-group-item font-size: 8vw">
+        <input type="radio" name="Answer" id="b">
+        <label for=""  id="b_text">Opt2</label>
+    </li>
+    <li class="list-group-item">
+        <input type="radio" name="Answer" id="c">
+        <label for=""  id="c_text">Opt3</label>
+    </li>
+    <li class="list-group-item">
+        <input type="radio" name="Answer" id="d">
+        <label for=""  id="d_text">Opt3</label>
+    </li>
+    
+   </ul>     
+   <button type="submit" class="btn-next btn btn-primary" onclick="next()">Next</button>
+
+  </div>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./app.js"></script>
+</html>
